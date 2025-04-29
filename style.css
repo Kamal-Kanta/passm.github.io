@@ -1,0 +1,119 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600&display=swap');
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Poppins', sans-serif;
+}
+
+body {
+    background-color: #f2f2f2;
+    color: #333;
+    padding: 10px;
+    transition: background-color 0.3s, color 0.3s;
+}
+
+.dark-mode {
+    background-color: #121212;
+    color: white;
+}
+
+nav {
+    background-color: black;
+    color: white;
+    display: flex;
+    justify-content: space-between;
+    padding: 12px 20px;
+    align-items: center;
+    border-radius: 10px;
+}
+
+.nav-links span, .nav-links button {
+    margin-left: 15px;
+    cursor: pointer;
+}
+
+.logo {
+    font-size: 24px;
+    font-weight: bold;
+}
+
+.container {
+    max-width: 800px;
+    margin: 20px auto;
+}
+
+.auth-container {
+    max-width: 400px;
+    margin: 50px auto;
+    padding: 20px;
+    text-align: center;
+    border: 2px solid #ccc;
+    border-radius: 10px;
+    background: white;
+}
+
+.auth-container input {
+    width: 90%;
+    padding: 10px;
+    margin: 10px 0;
+}
+
+.auth-form button {
+    padding: 10px 20px;
+    background-color: black;
+    color: white;
+    border: none;
+    cursor: pointer;
+    border-radius: 5px;
+}
+
+.toggle-buttons button {
+    margin: 10px;
+    padding: 8px 16px;
+}
+
+table, th, td {
+    border: 1px solid #000;
+    border-collapse: collapse;
+    padding: 10px;
+    text-align: left;
+    width: 100%;
+}
+
+button {
+    cursor: pointer;
+    margin: 10px;
+}
+
+#alert {
+    display: none;
+    color: green;
+}
+
+#website, #username, #password {
+    width: 100%;
+    padding: 10px;
+    margin: 10px 0;
+    box-sizing: border-box;
+}
+
+#website, #username {
+    font-size: 16px;
+}
+
+#password {
+    font-size: 16px;
+}
+
+@media (max-width: 600px) {
+    nav, .nav-links {
+        flex-direction: column;
+        align-items: flex-start;
+    }
+    .container, .auth-container {
+        padding: 10px;
+        width: 95%;
+    }
+}
